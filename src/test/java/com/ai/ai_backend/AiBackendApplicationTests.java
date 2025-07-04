@@ -26,7 +26,7 @@ class AiBackendApplicationTests {
 	@Test
 	void testTemplate() throws IOException {
 		String s=chatService.loadPromptTemplate("prompts/cricket_bot.txt");
-		String prompt=chatService.putValuesInPromptTemplate(s, Map.of("inputText","what is cricket");
+		String prompt=chatService.putValuesInPromptTemplate(s, Map.of("inputText","what is cricket"));
 
 		System.out.println(prompt);
 
